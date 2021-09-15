@@ -11,15 +11,23 @@ while True:
         print('Random Number Generator\n')
         try:
             min = int(input('Minimum: '))
-            try:
-                max = int(input('Maximum: '))
-                if(min <= max):
-                    break
-                else:
-                    print("min is larger than max")
+            if(min >= 0):
+                try:
+                    max = int(input('Maximum: '))
+                    if(max >= 0):
+                        if(min <= max):
+                            break
+                        else:
+                            print("min is langer than max")
+                            sleep(1)
+                    else:
+                        print("Please enter a positiv integer")
+                        sleep(1)
+                except ValueError:
+                    print("That is not an integer.")
                     sleep(1)
-            except ValueError:
-                print("That is not an integer.")
+            else:
+                print("Please enter a positiv integer")
                 sleep(1)
         except ValueError:
             print("That is not an integer.")
