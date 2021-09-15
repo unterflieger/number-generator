@@ -15,20 +15,17 @@ while True:
     b = 0
     cls()
     
-    while a is not b:
-        cls()
-        while a - 10 > b:
+    while a > b:
+        print(b)
+        if a - 10 > b:
             b = (b)+10
             if a is b:
                 sleep(0.1)
         else:
             b = (b)+1
-        print(b)
+            sleep(0.04)
+        cls()
 
-    cls
+    cls()
     print(a)
-    if a is (69):
-        sleep(1)
-        print('Nice.')
-        sleep(1)
     input("Press Enter to continue...")
