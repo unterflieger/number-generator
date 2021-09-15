@@ -1,4 +1,4 @@
-from os import system, name
+from os import system
 from time import sleep
 import random
 
@@ -54,17 +54,3 @@ while True:
 
     print(rand_int)
     input("Press Enter to continue...")
-
-
-    
-#    while a > b:
-#        print(b, end='\r')
-#        if a - 10 > b:
-#            b = (b)+10
-#            if a is b:
-#                sleep(0.1)
-#        else:
-#            b = (b)+1
-#            sleep(0.04)
-
-#   cls()
